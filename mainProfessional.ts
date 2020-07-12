@@ -1,4 +1,4 @@
-import {Professional} from "./Professional"
+import {Professional} from "./clases"
 
 //Crear un archivo main y con varios objetos de la clase Professional y mostrar todos sus atributos usando el método anterior
 
