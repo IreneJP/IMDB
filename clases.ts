@@ -107,5 +107,17 @@ public printMovie(){
 }
 
 
+}
+
+//Crear una clase denominada Imdb cuyo constructor reciba un array de objetos de la clase Movie 
+//Con un único atributo publico denominado películas que es un array de objetos de la clase Movie
+
+export class Imdb {
+    public peliculas: Movie[]
+    constructor(peliculas: Movie[]) { 
+        this.peliculas = peliculas
+    }
+
+
 
 }
