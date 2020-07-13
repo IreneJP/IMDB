@@ -81,6 +81,9 @@ var Imdb = /** @class */ (function () {
     function Imdb(peliculas) {
         this.peliculas = peliculas;
     }
+    //Crear un método en la clase Imdb denominado escribirEnFicheroJSON(nombreFichero: string) que tome el nombre de un fichero como parámetro de entrada y genere un fichero json con toda la información de la base de datos.
+    Imdb.prototype.escribirEnFicheroJSON = function (nombreFichero) {
+    };
     return Imdb;
 }());
 exports.Imdb = Imdb;

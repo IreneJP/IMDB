@@ -13,3 +13,11 @@ console.log(misPelis)
 
 
 
+let toJson = JSON.stringify(misPelis)
+console.log(toJson)
+
+
+
+
+
+

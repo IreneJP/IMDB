@@ -7,8 +7,11 @@ var Joker = new clases_1.Movie("Joker", 2019, "United States", "Drama. Thriller"
 var StarWars = new clases_1.Movie("Star Wars: El despertar de la Fuerza", 2015, "United States", "Science fiction");
 var misPelis = new clases_1.Imdb([LaberintoFauno, Joker, StarWars]);
 console.log(misPelis);
-console.log(JSON.stringify(misPelis));
-
-let fs = require ("fs")
-let toJson = JSON.stringify(misPelis)
-fs.writeFileSync("new.Json", toJson)
+//let fs = require ("fs")
+var toJson = JSON.stringify(misPelis);
+console.log(toJson);
+//let dot = fs.readFileSync("new.json")
+//let toString = dot.toString()
+//let misPelis1 = JSON.parse(toString)
+//console.log(misPelis1)
+//let instancia = new Imdb(misPelis1)
