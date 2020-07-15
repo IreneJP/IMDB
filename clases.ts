@@ -87,23 +87,14 @@ constructor(title: string,releaseYear: number, nacionality: string, genre: strin
 {
     this.title = title
     this.releaseYear = releaseYear
-    this.actors 
     this.nacionality = nacionality
-    this.director
-    this.writer
-    this.language 
-    this.plataform
-    this.isMCU
-    this.mainCharacterName
-    this.producer
-    this.distributor
-    this.genre
+    this.genre = genre
 }
 
 //• Crear un método que muestre todos los datos de las peliculas
 
 public printMovie(){
-    return ("Title: " + this.title + "\n" + "Año de lanzamiento: " + this.releaseYear + "\n" + "Actores: " + this.actors + "Nationality: " + this.nacionality + "\n" + "Director: " + this.director + "\n" + "Writer: " + this.writer + "\n" + "Language: " + this.language + "\n" + "Platform: " + this.plataform + "\n" + "Marvel Cinematic Universe (MCU): " + this.isMCU + "\n" + "Main Character Name: " + this.mainCharacterName + "\n" + "Producer: " + this.producer + "\n"+ "Distributor: " + this.distributor + "\n" + "Genre: " + this.genre + "\n")
+    return ("Title: " + this.title + "\n" + "Año de lanzamiento: " + this.releaseYear + "\n" + "Actores: " + this.actors + "\n" + "Nationality: " + this.nacionality + "\n" + "Director: " + this.director + "\n" + "Writer: " + this.writer + "\n" + "Language: " + this.language + "\n" + "Platform: " + this.plataform + "\n" + "Marvel Cinematic Universe (MCU): " + this.isMCU + "\n" + "Main Character Name: " + this.mainCharacterName + "\n" + "Producer: " + this.producer + "\n"+ "Distributor: " + this.distributor + "\n" + "Genre: " + this.genre + "\n")
 }
 
 
@@ -117,10 +108,64 @@ export class Imdb {
     constructor(peliculas: Movie[]) { 
         this.peliculas = peliculas
     }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
 //Crear un método en la clase Imdb denominado escribirEnFicheroJSON(nombreFichero: string) que tome el nombre de un fichero como parámetro de entrada y genere un fichero json con toda la información de la base de datos.
 
-escribirEnFicheroJSON(nombreFichero: string){
+   /* escribirEnFicheroJSON(nombreFichero: string){
+        let fs = require("fs")
+        let fichero
+        let data 
+                for (let i=0; i<this.peliculas.length; i++){
+                    fichero += this.peliculas[i]}    data=fichero
+
+
+
+        
+}
+
+/*
+    escribirEnFicheroJSON(nombreFichero: string){
+        var data = JSON.parse(nombreFichero);
+        if (nombreFichero == "")
+        return data;
+    };*/
     
 }
 
-}
+

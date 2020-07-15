@@ -56,21 +56,12 @@ var Movie = /** @class */ (function () {
     function Movie(title, releaseYear, nacionality, genre) {
         this.title = title;
         this.releaseYear = releaseYear;
-        this.actors;
         this.nacionality = nacionality;
-        this.director;
-        this.writer;
-        this.language;
-        this.plataform;
-        this.isMCU;
-        this.mainCharacterName;
-        this.producer;
-        this.distributor;
-        this.genre;
+        this.genre = genre;
     }
     //• Crear un método que muestre todos los datos de las peliculas
     Movie.prototype.printMovie = function () {
-        return ("Title: " + this.title + "\n" + "Año de lanzamiento: " + this.releaseYear + "\n" + "Actores: " + this.actors + "Nationality: " + this.nacionality + "\n" + "Director: " + this.director + "\n" + "Writer: " + this.writer + "\n" + "Language: " + this.language + "\n" + "Platform: " + this.plataform + "\n" + "Marvel Cinematic Universe (MCU): " + this.isMCU + "\n" + "Main Character Name: " + this.mainCharacterName + "\n" + "Producer: " + this.producer + "\n" + "Distributor: " + this.distributor + "\n" + "Genre: " + this.genre + "\n");
+        return ("Title: " + this.title + "\n" + "Año de lanzamiento: " + this.releaseYear + "\n" + "Actores: " + this.actors + "\n" + "Nationality: " + this.nacionality + "\n" + "Director: " + this.director + "\n" + "Writer: " + this.writer + "\n" + "Language: " + this.language + "\n" + "Platform: " + this.plataform + "\n" + "Marvel Cinematic Universe (MCU): " + this.isMCU + "\n" + "Main Character Name: " + this.mainCharacterName + "\n" + "Producer: " + this.producer + "\n" + "Distributor: " + this.distributor + "\n" + "Genre: " + this.genre + "\n");
     };
     return Movie;
 }());
@@ -81,9 +72,6 @@ var Imdb = /** @class */ (function () {
     function Imdb(peliculas) {
         this.peliculas = peliculas;
     }
-    //Crear un método en la clase Imdb denominado escribirEnFicheroJSON(nombreFichero: string) que tome el nombre de un fichero como parámetro de entrada y genere un fichero json con toda la información de la base de datos.
-    Imdb.prototype.escribirEnFicheroJSON = function (nombreFichero) {
-    };
     return Imdb;
 }());
 exports.Imdb = Imdb;
